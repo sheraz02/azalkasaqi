@@ -1,16 +1,16 @@
 # include <iostream>
 using namespace std;
-// int main(){
-//     string name;
-//     int age;
-//     cout << "Your Name? ";
-//     cin >> name;
-//     cout << "Age? ";
-//     cin >> age;
-//     cout << "Hello, " << name << " You are " << age << " old.";\
+int main(){
+    string name;
+    int age;
+    cout << "Your Name? ";
+    cin >> name;
+    cout << "Age? ";
+    cin >> age;
+    cout << "Hello, " << name << " You are " << age << " old.";\
 
-//     return 0;
-// }
+    return 0;
+}
 
 
 int main(){
