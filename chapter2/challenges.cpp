@@ -266,13 +266,51 @@ using namespace std;
 //  }
 #include <string>
 
+// int main(){
+//     string name;
+//     string city;
+//     cout << "Enter name: ";
+//     getline(cin, name);
+//     cout << "Enter city: ";
+//     getline(cin, city);
+//     cout << "Hello, " << name << " . We got your address(" << city << "). Your parcel will arrive soon.";
+//     return 0;
+// }
+
+
+// int main(){
+//     double a, b, c;
+//     cout << "Enter side of length a: ";
+//     cin >> a;
+//     cout << "Enter side of length b: ";
+//     cin >> b;
+//     c = sqrt(pow(a, 2.0) + pow(b, 2.0));
+//     cout << "Length of hypotenuse is: " << c << endl;
+//     return 0;
+// }
+
+
+
+
 int main(){
-    string name;
-    string city;
-    cout << "Enter name: ";
-    getline(cin, name);
-    cout << "Enter city: ";
-    getline(cin, city);
-    cout << "Hello, " << name << " . We got your address(" << city << "). Your parcel will arrive soon.";
+    const double COST_PER_CUBIC_FOOT = 0.23, CHARGE_PER_CUBIC_FOOT = 0.5;
+    double length, width, height, volume, cost, charge, profit;
+    cout << "Enter length: ";
+    cin >> length;
+    cout << "Enter width: ";
+    cin >> width;
+    cout << "Enter height: ";
+    cin >> height;
+
+    volume = length * width * height;
+    cost = COST_PER_CUBIC_FOOT * volume;
+    charge = CHARGE_PER_CUBIC_FOOT * volume;
+    profit = charge - cost;
+    
+    cout << "\n----------RESULT------------" << endl;
+    cout << "Volume of crate is : " << volume << endl;
+    cout << "Cost per cubic foot: $" << cost << endl;
+    cout << "Charge per cubic foot: $" << charge << endl;
+    cout << "Profit: $" << profit << endl;
     return 0;
 }
